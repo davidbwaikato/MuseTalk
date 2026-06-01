@@ -52,7 +52,7 @@ echo "----"
 # Download SD VAE weights
 hf download stabilityai/sd-vae-ft-mse \
   --local-dir $CheckpointsDir/sd-vae \
-  "config.json" "diffusion_pytorch_model.bin"
+  "config.json" "diffusion_pytorch_model.bin" "diffusion_pytorch_model.safetensors"
 
 # Download Whisper weights
 hf download openai/whisper-tiny \

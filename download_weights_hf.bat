@@ -37,7 +37,7 @@ copy models\musetalkV15\musetalk.json  models\musetalkV15\config.json
 echo ----
 
 :: Download SD VAE weights
-hf download stabilityai/sd-vae-ft-mse --local-dir %CheckpointsDir%\sd-vae "config.json" "diffusion_pytorch_model.bin"
+hf download stabilityai/sd-vae-ft-mse --local-dir %CheckpointsDir%\sd-vae "config.json" "diffusion_pytorch_model.bin" "diffusion_pytorch_model.safetensors"
 
 :: Download Whisper weights
 hf download openai/whisper-tiny --local-dir %CheckpointsDir%\whisper "config.json" "pytorch_model.bin" "preprocessor_config.json"
