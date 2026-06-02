@@ -37,7 +37,7 @@ hf download TMElyralab/MuseTalk \
   --local-dir $CheckpointsDir
 
 echo "----"
-echo "Python code for model now expects Musetalk config file to be 'config.json' not 'musetalk.json'"
+echo "Python code for model potentially expects Musetalk config file to be 'config.json' not 'musetalk.json'"
 echo "Copying models/musetalk/musetalk.json => models/musetalk/config.json"
 /bin/cp models/musetalk/musetalk.json  models/musetalk/config.json
 
